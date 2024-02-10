@@ -1,6 +1,6 @@
-title: Leap Day theme
-description: Leap Day is a theme for GitHub Pages.
-show_downloads: true
+title: Claudia Narang
+description: Passionate Environmental and Software Engineer.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-leap-day
 remote_theme: pages-themes/leap-day@v0.2.0

@@ -5,6 +5,7 @@ by Matt Graham
 /*! normalize.css 2012-02-07T12:37 UTC - https://github.com/necolas/normalize.css */
 /* ============================================================================= HTML5 display definitions ========================================================================== */
 /* Corrects block display not defined in IE6/7/8/9 & FF3 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 
 /* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
@@ -311,3 +312,16 @@ footer { width: 180px; position: fixed; left: 50%; margin-left: -530px; bottom: 
 @media print, screen and (max-height: 680px) { footer { text-align: center; margin: 20px auto; position: relative; left: auto; bottom: auto; width: auto; } }
 @media print, screen and (max-height: 480px) { nav { display: none; }
   footer { text-align: center; margin: 20px auto; position: relative; left: auto; bottom: auto; width: auto; } }
+:root { --non_photo_blue: #7BDFF2; --celeste: #B2F7EF; --mint_cream: #EFF7F6; --mimi_pink: #efc478; --lavender_pink: #ce9d46; --moonstone_blue: #75AEBF; font-family: 'Roboto', sans-serif; }
+
+header h1 { font-family: 'Roboto', sans-serif; font-weight: bold; text-shadow: 0px 2px 0px var(--moonstone_blue); }
+
+header { background: var(--moonstone_blue); }
+
+body { background: #d1eae6; }
+
+#banner { background: var(--mimi_pink); border: 1px solid var(--lavender_pink); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); }
+
+#banner .button { border: 1px solid #2ca25f; background: linear-gradient(#e5f5f9, #99d8c9); box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1); }
+
+#banner .button:hover { background: #99d8c9; }
