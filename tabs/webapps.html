@@ -1,6 +1,73 @@
-<h2>I spy with my little eye</h2>
-<p>Description & Screenshots will be added soon</p>
-<h2>Linguistic Ear</h2>
-<p>Description & Screenshots will be added soon</p>
-<h2>VowelVision</h2>
-<p>Description & Screenshots will be added soon</p>
+<p style="color: grey">Hover over the screens to get more info...</p>
+<div class="projects-grid">
+    <div class="project">
+        <img class="screen" src="../assets/ISpyWithMyLittleEye_Thumbnail.png" alt="I spy with my little eye"/>
+        <div class="hover-content">
+            <h3>I spy with my little eye</h3>
+            <p>This group project was part of the University of Zurich's <a href="https://hasel.dev/teachings/fs23-sopra/" target="_blank">"Sopra" course</a>.</p>
+            <p>The goal was to bring the classic guessing game online, using the Google Maps API to connect friends and family while discovering the world. </p>
+            <p>The backend was built using Java and the Spring Boot framework (<a href="https://github.com/sopra-fs23-group-09/SpyWithMyLittleEye_server" target="_blank">GitHub repo</a>),
+                while the frontend was developed with JavaScript and React (<a href="https://github.com/sopra-fs23-group-09/SpyWithMyLittleEye_client" target="_blank">GitHub repo</a>).
+                I mainly contributed to the backend.</p>
+            <p>The website was deployed in the summer of 2023 on Google App Engine, with the project remaining online as long as student credits allowed.</p>
+            <h4>Gameplay</h4>
+            <p>One Player creates a game and share the generated code with the other players. Everyone waits in the lobby, until the game is started.</p>
+            <img src="../assets/Screenshots_ISpyWithMyLittleEye/Lobby.png" alt="Screenshot of the lobby screen." class="screenshot"/>
+            <p>When the game is started for each round a "Spier" is selected, which chooses a location in Google Street View, places an object, and provides a color for it.</p>
+            <img src="../assets/Screenshots_ISpyWithMyLittleEye/ChooseLocation.png" alt="Screenshot of Spier choosing a location and object" class="screenshot"/>
+            <p>The other players then have one minute to guess the object.
+                Points are awarded based on speed, with incorrect guesses displayed for all players and correct guesses acknowledged.</p>
+            <img src="../assets/Screenshots_ISpyWithMyLittleEye/GuessLocation.png" alt="Screenshot of guessing" class="screenshot"/>
+            <p>The Spier can also provide hints.</p>
+            <img src="../assets/Screenshots_ISpyWithMyLittleEye/Hint.png" alt="Screenshot of Spier providing a hint" class="screenshot"/>
+            <p>After each round and when the game is over, a leaderboard is displayed showing who earned the most points.</p>
+            <img src="../assets/Screenshots_ISpyWithMyLittleEye/Leaderboard.png" alt="Screenshot leaderboard" class="screenshot"/>
+        </div>
+    </div>
+    <div class="project">
+        <img class="screen" src="../assets/LinguisticEar_Thumbnail.png" alt="Linguistic Ear">
+        <div class="hover-content">
+            <h3>Linguistic Ear</h3>
+            <p>This website was developed as part of the Linguistic Web Application course at the University of Zurich during the Autumn Semester 2023
+                (<a href="https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language%3DDE%26sap-ui-language%3DDE#/details/2023/003/SM/50941585" target="_blank">link to course description</a>)
+                , in collaboration with a team of three.</p>
+            <p>The application is a quiz game where users must identify the language of a voice sample from multiple choices, with the option to seek hints for assistance.</p>
+            <img class="screenshot" src="../assets/Screenshots_LinguisticEar/Quiz.png" alt=""/>
+            <p>The goal is to help users sharpen their intuition for distinguishing the unique sounds of various languages.</p>
+            <p>At the start of each game, users can customize the difficulty by selecting the number of questions and answer choices.</p>
+            <img class="screenshot" src="../assets/Screenshots_LinguisticEar/SetupGame.png" alt=""/>
+            <p>Additionally, users can explore detailed information about different languages, such as the number of native speakers, the language family, and the writing system.</p>
+            <img class="screenshot" src="../assets/Screenshots_LinguisticEar/InfoLanguages.png" alt=""/>
+            <p>The code is hosted in a private GitLab repository, and the database uses PostgreSQL with datasets sourced from the Mozilla Common Voice repository.
+                The backend was built using Python and the Flask framework, while the frontend was developed with JavaScript and Vue.js.</p>
+        </div>
+    </div>
+    <div class="project">
+        <img class="screen" src="../assets/VowelVision_Thumbnail.png" alt="VowelVision">
+        <div class="hover-content">
+            <h3>VowelVision</h3>
+            <p>This project, developed as part of my Bachelor thesis, introduces VowelVision, a web-based tool designed to help native English speakers
+                improve their German vowel pronunciation through acoustic and articulatory feedback. </p>
+            <p>The tool utilizes voice cloning to generate a native-like audio version of the user’s speech in the target language.
+                It analyzes the user’s vowel formants and compares them to those of the cloned voice, offering guidance on tongue positioning to
+                achieve more accurate pronunciation.</p>
+            <p>The system is built with a Flask backend and a Vue.js frontend and is containerized with Docker for streamlined deployment.
+                VowelVision currently supports 10 languages and has the potential to expand as additional language analysis tools become available.
+                While further testing is required to assess its effectiveness, planned future improvements
+                include real-time feedback to enhance the learning experience.</p>
+            <p>Users begin by selecting a target
+                language and choosing a text segment to either record or upload.</p>
+            <img class="screenshot" src="../assets/Screenshots_VowelVision/Screenshot_Tool_RequestBeginning.png" alt=""/>
+            <p>Once a user submits their voice sample and clicks the “Run Analysis” button, the
+                backend processes the data within one or two minutes. </p>
+            <img class="screenshot" src="../assets/Screenshots_VowelVision/Screenshot_Tool_Analysis.png" alt=""/>
+            <p>When the analysis is complete, users can listen to the voice-cloned version of the text
+                and view a scatter plot comparing their formants with those from the voice-cloned
+                audio.</p>
+            <img class="screenshot" src="../assets/Screenshots_VowelVision/Screenshot_Tool_Result.png" alt=""/>
+            <p>The FAQ page answers frequently asked questions, which users found more engaging
+                than lengthy theoretical explanations on the earlier version of the website</p>
+            <img class="screenshot" src="../assets/Screenshots_VowelVision/Screenshot_FAQ_1.png" alt=""/>
+        </div>
+    </div>
+</div>
