@@ -2,9 +2,9 @@ console.log('Home tab loaded');
 
 // Array of images and descriptions
 const slidesData = [
-    { image: "../assets/ISpyWithMyLittleEye_Thumbnail.png", description: "Online version of 'I Spy with my Little Eye'" },
-    { image: "../assets/LinguisticEar_Thumbnail.png", description: "Quiz game for recoginzing languages of voice samples" },
-    { image: "../assets/VowelVision_Thumbnail.png", description: "Website to improve vowel pronunciation" },
+    { image: "../assets/Thumbnails/ISpyWithMyLittleEye_Thumbnail.png", description: "Online version of 'I Spy with my Little Eye'" },
+    { image: "../assets/Thumbnails/LinguisticEar_Thumbnail.png", description: "Quiz game for recoginzing languages of voice samples" },
+    { image: "../assets/Thumbnails/VowelVision_Thumbnail.png", description: "Website to improve vowel pronunciation" },
 ];
 
 const slideshowContainer = document.querySelector(".slideshow-container");
